@@ -1,0 +1,116 @@
+:root {
+  --nav-color: whitesmoke;
+  --main-color: #ff545a;
+}
+.navbar {
+  background-color: var(--nav-color) !important;
+}
+.navbar .nav-link {
+  transition: all 0.5s !important;
+}
+.navbar ul a:hover {
+  color: var(--main-color);
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+.landing {
+  height: calc(103vh);
+}
+.landing::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../img/welcome-hero/banner.jpg");
+  background-size: cover;
+  filter: contrast(0.5);
+}
+
+.landing .container {
+  font-weight: bolder;
+  position: relative;
+}
+.landing .container h1 {
+  font-size: 3rem !important;
+}
+
+.landing .btn {
+  padding: 10px;
+  width: 150px;
+  transition: all;
+  background-color: var(--main-color);
+  transition-duration: 0.5s;
+}
+
+.btn:hover {
+  background-color: #f43032;
+}
+
+.catogroy > div > div {
+  height: 200px !important;
+  position: relative;
+  top: -100px;
+  background-color: whitesmoke;
+  transition-duration: 1s;
+}
+.catogroy i {
+  font-size: 50px;
+}
+.catogroy > div > div:hover {
+  background-color: var(--main-color);
+  color: whitesmoke;
+}
+
+.how-it-work,
+.explore {
+  color: rgb(89, 89, 89);
+}
+.cards > div {
+  transition: all 0.5s !important;
+}
+.how-it-work .cards > div:hover {
+  fill: var(--main-color) !important;
+  background-color: #ff545a;
+}
+
+.how-it-work i {
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+  vertical-align: middle;
+  border-radius: 50% !important;
+  background-color: rgba(190, 187, 187, 0.322);
+  fill: gray !important;
+}
+.how-it-work .cards > div:hover i {
+  /* fill: aquamarine; */
+  background-color: white !important;
+  fill: var(--main-color) !important;
+}
+
+.explore {
+  border: 1px solid transparent;
+}
+
+.explore .img-fluid {
+  background-size: cover;
+  width: 100%;
+}
+
+.explore .footer i {
+  width: 20px;
+  height: 20px;
+  fill: gray !important;
+  transition-duration: 0.5s;
+}
+.explore .footer i:hover {
+  fill: green !important;
+}
+
+.explore .row > div {
+  /* width: calc(85% / 3); */
+}
