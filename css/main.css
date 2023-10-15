@@ -2,6 +2,11 @@
   --nav-color: whitesmoke;
   --main-color: #ff545a;
 }
+body {
+  background-image: url("../img/counter/counter-banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
 .navbar {
   background-color: var(--nav-color) !important;
 }
@@ -21,7 +26,7 @@
 }
 .landing::before {
   content: "";
-  height: 100%;
+  height: 106%;
   width: 100%;
   position: absolute;
   z-index: -1;
@@ -53,7 +58,7 @@
 .catogroy > div > div {
   height: 200px !important;
   position: relative;
-  top: -100px;
+  top: -103px;
   background-color: whitesmoke;
   transition-duration: 0.5s;
   transform: scale(1) !important;
@@ -67,6 +72,12 @@
 .catogroy > div > div:hover {
   background-color: var(--main-color);
   color: whitesmoke;
+}
+.catogroy .row {
+  background-color: transparent !important;
+}
+.catogroy .row > div {
+  background-color: white !important;
 }
 
 .how-it-work,
@@ -171,4 +182,71 @@
 .swiper .row {
   display: flex !important;
   flex-wrap: nowrap !important;
+}
+.stats {
+  position: relative;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+.stats::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0.6;
+  background-color: gray;
+  z-index: -1;
+}
+
+.articles .row > div:hover {
+  color: #f43032 !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.articles .row > div img {
+  width: 100%;
+  object-fit: fill !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .articles .row .col-lg-3 {
+    width: 32%;
+  }
+}
+
+.contact button,
+.contact input {
+  border: none !important;
+  border-radius: 0;
+}
+
+.footer {
+  background-color: whitesmoke !important;
+}
+.footer .copyright a {
+  background-color: rgba(232, 231, 231, 0.451);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: gray;
+  transition-duration: 0.7s;
+}
+.footer .copyright a:hover {
+  background-color: #f43032;
+  color: white;
+}
+
+.footer,
+.contact,
+.articles,
+.mySwiper,
+.explore,
+.how-it-work,
+.catogroy {
+  background-color: whitesmoke !important;
 }
