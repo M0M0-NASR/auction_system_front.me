@@ -2,11 +2,20 @@
   --nav-color: whitesmoke;
   --main-color: #ff545a;
 }
+
+/* start common parts */
+body > div:not(.stats, .landing) {
+  background-color: whitesmoke !important;
+}
+
 body {
   background-image: url("../img/counter/counter-banner.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
+/* end common parts */
+
+/* start navbar */
 .navbar {
   background-color: var(--nav-color) !important;
 }
@@ -20,7 +29,9 @@ body {
 .navbar-collapse {
   flex-grow: 0 !important;
 }
+/* end navbar */
 
+/* start navbar */
 .landing {
   height: calc(103vh);
 }
@@ -54,7 +65,9 @@ body {
 .btn:hover {
   background-color: #f43032;
 }
+/* end navbar */
 
+/* start contact */
 .catogroy .row div {
   height: 200px !important;
   position: relative;
@@ -78,7 +91,9 @@ body {
 .catogroy .row > div {
   background-color: white !important;
 }
+/* end catogroy */
 
+/* start how it work */
 .how-it-work,
 .explore {
   color: rgb(89, 89, 89);
@@ -105,7 +120,9 @@ body {
   background-color: white !important;
   fill: var(--main-color) !important;
 }
+/* end .how-it-work */
 
+/* start expolre */
 .explore {
   border: 1px solid transparent;
 }
@@ -157,7 +174,9 @@ body {
   opacity: 100% !important;
   transform: translateY(-155%) !important;
 }
+/* end expolre */
 
+/* start options  */
 .mySwiper {
   height: 90vh !important;
 }
@@ -182,6 +201,9 @@ body {
   display: flex !important;
   flex-wrap: nowrap !important;
 }
+/* end options */
+
+/* start stats */
 .stats {
   position: relative;
   color: whitesmoke;
@@ -200,7 +222,9 @@ body {
   background-color: gray;
   z-index: -1;
 }
+/* end stats */
 
+/* start articles */
 .articles .row > div:hover {
   color: #f43032 !important;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
@@ -217,13 +241,18 @@ body {
     width: 32%;
   }
 }
+/* end .articles */
+
+/* start .contact */
 
 .contact button,
 .contact input {
   border: none !important;
   border-radius: 0;
 }
+/* end .contact */
 
+/* start footer */
 .footer {
   background-color: whitesmoke !important;
 }
@@ -239,13 +268,4 @@ body {
   background-color: #f43032;
   color: white;
 }
-
-.footer,
-.contact,
-.articles,
-.mySwiper,
-.explore,
-.how-it-work,
-.catogroy {
-  background-color: whitesmoke !important;
-}
+/* end footer */
