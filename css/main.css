@@ -55,7 +55,7 @@ body {
   background-color: #f43032;
 }
 
-.catogroy > div > div {
+.catogroy .row div {
   height: 200px !important;
   position: relative;
   top: -103px;
@@ -63,15 +63,14 @@ body {
   transition-duration: 0.5s;
   transform: scale(1) !important;
 }
-.catogroy > div > div:hover {
+
+.catogroy .row div:hover {
   transform: scale(1.1) !important;
+  background-color: var(--main-color);
+  color: rgb(200, 110, 110);
 }
 .catogroy i {
   font-size: 50px;
-}
-.catogroy > div > div:hover {
-  background-color: var(--main-color);
-  color: whitesmoke;
 }
 .catogroy .row {
   background-color: transparent !important;
